@@ -7,59 +7,61 @@
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!--For header and nav bar-->
-	<header>
-		<img src="" class="logo">
-		<h1>GetTicket<span class="net">.net</span></h1>
+	<!--For nav bar-->
+	   		
 		<nav>
-			<ul class="outside-links">
+            <div class="site-link">
+                <img src="icons/ticket.svg" class="logo">
+                <h1>GetTicket<span class="net">.net</span></h1>
+			</div>
+			<ul class="nav-links">
 				<li class="link"><a href="#">Browse Events</a></li>
 				<li class="link"><a href="#">Organize</a></li>
-				<li class="link"><a href="#">Organize</a>Sign In</li>
-				<li class="link"><a href="#">Organize</a>Contact</li>
+				<li class="link"><a href="#">Sign In</a></li>
+				<li class="link"><a href="#">Contact</a></li>
 				<li class="link">
-					<!--including button in navigation?-->
-					<button id="create">Create Event</button>
+					<!--Create Event button-->
+					<a href="#" id="create-btn">Create Event</a>
 				</li>
 			</ul>
 		</nav>
-	</header>
-
-	<!--large fish image container -->
-	<div class="fish">
-		<img src="" id="fish">
-	</div>
 
 	<!--container including event info-->
-	<section id="info">
-		<div id="event-info">
-			<div id="date">
-				<p id="day">05</p>
-				<p id="month">NOV</p>
-			</div>
-			<h2>Black Light Aquarium</h2>
-			<p id="slogan">There are so many reasons to smile!</p>
+	<div class="hero">
+	    <!--large fish image container -->
+        <div class="hero-image">
+            <img src="images/fish.png" id="fish">
+        </div>
+        <div class="hero-description">
+            <div id="event-info">
+                <div id="date">
+                    <p id="day">05</p>
+                    <p id="month">NOV</p>
+                </div>
+                <h2>Black Light Aquarium</h2>
+                <p id="slogan">There are so many reasons to smile!</p>
+            </div>
+            <div id="istanbul">
+                <img src="">
+                <p class="istanbul">&#304;stanbul Aquarium</p>
+		    </div>
+		    <a href="#" id="tix-btn">Get Tickets Now!</a>
 		</div>
-		<div id="istanbul">
-			<img src="">
-			<p class="istanbul">&#304;stanbul Aquarium</p>
-		</div>
-		<button>Get Tickets Now!</button>
-	</section>
+	</div>
 
 	<!--container including columns-->
-	<section id="columns">
-		<div class="col-1">
+	<section class="columns">
+		<div class="col">
 			<img src="" class="big-icons">
 			<h3>About Us</h3>
 			<p class="col-text">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox</p>
 		</div>
-		<div class="col-2">
+		<div class="col">
 			<img src="" class="big-icons">
 			<h3>Date & Time</h3>
 			<p class="col-text">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox</p>
 		</div>
-		<div class="col-3">
+		<div class="col">
 			<img src="" class="big-icons">
 			<h3>Location</h3>
 			<p class="col-text">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox</p>
@@ -87,4 +89,5 @@
 		</ul>
 	</footer>  
 </body>
+
 </html>
