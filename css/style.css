@@ -20,7 +20,7 @@ body {
 nav {
     display: grid;
 	grid-template-columns: 1fr 1fr;
-    height: 80px;
+    min-height: 80px;
 }
 
 .site-link {
@@ -30,9 +30,6 @@ nav {
     padding-left: 5%;
 }
 
-nav * {
-    /* border: 1px dotted black; */
-}
 
 .site {
     display: inline;
@@ -183,7 +180,8 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 7%;    
-    margin: 0 7%;    
+    margin: 0 7%;
+    min-height: 300px;
 }
 
 .col {
@@ -208,8 +206,38 @@ h3 {
 }
 
 .map {
+    min-height: 400px;
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #080925;
 }
- */
+
+.social {
+    margin-right: 3%;
+}
+
+.small-icons {
+    margin-left: 40px;
+}
+
+.copyright-container > * {
+    display: inline;
+}
+
+.copyright-container {
+    margin-left: 3%;
+}
+
+.copyright {
+    color: #CACACF;
+    font-family: "Lato";
+    font-size: 10px;
+}
+
+.creators {
+    color: #7B3E83;
+}
