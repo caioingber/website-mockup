@@ -12,13 +12,11 @@ body {
     font-family: 'Montserrat', 'Lato', sans-serif;
     margin: 0;
     background-color: #9A4D9F;
-    height: 100vh;
 }
 
 .container {
+    width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-rows: 80px auto auto auto 50px;
 }
 
 
@@ -26,7 +24,7 @@ body {
 
 nav {
     display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 55% 45%;
     height: 80px;
 }
 
@@ -57,19 +55,20 @@ nav {
 
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 20%;
-    padding-right: 5%;
 }
 
 li {
     display: inline;
+    padding: 0 auto;
 }
 
 .link {
     z-index: 2;
     position: relative;
+    text-align: center;
+
 }
 
 .link a {
@@ -84,6 +83,31 @@ li {
     padding: 10px 12px;
     border: 2px solid #FFF;
     border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    body {   
+        margin: 0;
+        min-width: 768px;
+    }
+    .container {
+        height: 100%;
+    }    
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .flex-900 {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-links {
+        padding: 0;
+    }    
+    .pad-900 {
+        margin: 0 auto;
+    }
 }
 
 /*****Hero Section stylings*****/
@@ -138,6 +162,9 @@ li {
     font-size: 16px;
 }
 
+.title {
+    text-align: center;
+}
 
 h2 {
     text-transform: uppercase;
@@ -251,7 +278,7 @@ h3 {
 
 /******Footer Styles*****/
 footer {
-    height: 50px;
+    min-height: 50px;
     position: static;
     display: flex;
     justify-content: space-between;
