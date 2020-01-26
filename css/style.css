@@ -8,16 +8,10 @@ Purple: #9A4D9F;
 
 *******/
 
-body > * {
-    border: 1px dotted black;
-    background-color: #9A4D9F;
-}
-
-body {
-    display: grid;
-    grid-template-rows: 100px 1fr 1fr 1fr 80px;
+body {   
     font-family: 'Lato', 'Montserrat', sans-serif;
     margin: 0;
+    background-color: #9A4D9F;
 }
 
 
@@ -26,29 +20,68 @@ body {
 nav {
     display: grid;
 	grid-template-columns: 1fr 1fr;
+    height: 80px;
 }
 
 .site-link {
     z-index: 2;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
 }
 
 nav * {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 }
 
+.site {
+    display: inline;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;   
+}
+
+.logo {
+    height: 45px;
+    margin-right: 10px;
+}
 .net {
     color: #9A4D9F;
 }
 
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 5%;
+}
+
 li {
     display: inline;
+}
+
+.link {
     z-index: 2;
     position: relative;
 }
 
-h1 {
-    display: inline;
+.link a {
+    text-decoration: none;
     color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#create-btn {
+    padding: 10px 12px;
+    border: 2px solid #FFF;
+    border-radius: 5px;
 }
 
 /*****Hero Section stylings*****/
@@ -57,29 +90,100 @@ h1 {
 .hero {
     display: grid;
     grid-template-columns: 60% 40%;
+    min-height: 700px
 }
 
 .hero-image {
     position: relative;
 }
 
-#fish {
-    display: inline-block;
+.fish {
     position: absolute;
-    right: 10%;
-    bottom: -50%;
     z-index: 1;
+    right: 0;
+    top: -80px;
 }
 
-.hero * { 
-    border: 1px dotted black;
+.hero-description {
+    grid-column: 2 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat";
+    
 }
 
-/*****Columns section stylings***/
+.date {
+    background-color: #B983BC;
+    margin-top: 40px;
+    padding: 7px 18px;
+    color: #FFF;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.date > * {
+    margin: 0;
+    text-align: center;
+}
+
+#day {
+    font-size: 39px;
+    font-weight: 400;
+}
+
+#month {
+    font-size: 16px;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    color: #080A21;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+#slogan {
+    color: #FFF;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: .5px;      
+}
+
+.hero-location {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.istanbul {
+    display: inline;
+    color: #080925;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#tix-btn {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #080925;
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+
+
+/*****Column section*****/
 
 .columns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;    
 }
 
 .col {
@@ -88,6 +192,10 @@ h1 {
     align-items: center;
 }
 
-.istanbul {
-    
+
+.map {
 }
+
+footer {
+}
+ */
