@@ -205,11 +205,46 @@ h3 {
     font-weight: 200;
 }
 
-.map {
-    min-height: 400px;
+
+/*******Map Styles****/
+
+.directions {
+    height: 450px;
+    background-image: url(map.png);
+    background-size: cover;
+    display: flex;
 }
 
+.map {
+    transform: translate(64%, 92%);
+    overflow: hidden;
+    height: fit-content;
+}
+
+.location { 
+    margin-left: 20%;
+    color: #9A4D9F;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transform: translate(-13%, -10%)
+}
+
+.location p {
+    text-align: center;
+    transform: translate(-100%, 25%);
+    margin: 0;
+    line-height: 1.5em;
+        
+}
+
+
+/******Footer Styles*****/
 footer {
+    position: static;
     display: flex;
     justify-content: space-between;
     align-items: center;
