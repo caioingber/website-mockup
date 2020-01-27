@@ -219,6 +219,7 @@ h2 {
     width: 50%;
     text-align: center;
     margin-top: 50px;
+    padding: 10px 40px;
 }
 /*Media queries for hero section*/
 @media screen and (max-width: 992px) {
@@ -242,9 +243,10 @@ h2 {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        margin: 7% 15% 0 5%;
+        margin: 6% 15% 0 5%;
     }
     .date {
+        margin-top: 0;
         margin-right: 10%;
         padding: 15px 30px;
     }
@@ -263,6 +265,7 @@ h2 {
     #tix-btn {
         margin-top: 25px;
         margin-bottom: 25px;
+        padding: 18px 40px;
     }
 }
 
@@ -297,6 +300,20 @@ h3 {
     font-weight: 200;
 }
 
+/*Media queries for column section*/
+@media screen and (max-width: 992px) {
+    .columns {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        grid-gap: 2%;    
+        margin: 5% 7% 0 7%;
+        min-height: 1000px;
+    }
+    .col {
+        margin: 0 23%;
+    }
+}
 
 /*******Map Styles****/
 
@@ -332,6 +349,16 @@ h3 {
     line-height: 1.5em;
         
 }
+/*Media queries for map section*/
+@media screen and (max-width: 992px) {
+    .directions {
+        min-height: 400px;
+        background-image: url(map-tablet.png);
+    }
+    .map {
+    transform: translate(50%, 92%);
+    }
+}
 
 
 /******Footer Styles*****/
@@ -345,7 +372,7 @@ footer {
 }
 
 .social {
-    margin-right: 3%;
+    margin-right: 4%;
 }
 
 .small-icons {
@@ -357,7 +384,7 @@ footer {
 }
 
 .copyright-container {
-    margin-left: 3%;
+    margin-left: 4%;
 }
 
 .copyright {
