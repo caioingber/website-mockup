@@ -1,99 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Black Light Aquarium</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-</head>
-<body>
-   <div class="container">   		
-        <nav>
-           <img class="hamburger" src="icons/hamburger.svg">
-            <div class="site-link">
-                <img src="icons/ticket.svg" class="logo">
-                <a href="#" class="site">GetTicket<span class="net">.net</span></a>
-            </div>
-            <ul class="nav-links">
-                <li class="link"><a href="#">Browse Events</a></li>
-                <li class="link"><a href="#">Organize</a></li>
-                <li class="link"><a href="#">Sign In</a></li>
-                <li class="link"><a href="#">Contact</a></li>
-                <li class="link" id="create-btn">
-                    <a href="#">Create Event</a>
-                </li>
-            </ul>
-        </nav>
-         <div class="hero">
-            <div class="hero-image">
-                <img src="images/fish.png" class="fish">
-            </div>
-            <div class="hero-description">             
-                    <div class="date">
-                        <p id="day">05</p>
-                        <p id="month">NOV</p>
-                    </div>
-                <div class="hero-text">
-                    <h2 class="title">Black Light Aquarium</h2>
-                    <p id="slogan" class="title">There are so many reasons to smile!</p>
-                    <div class="hero-location">
-                        <img src="icons/small-point.svg">
-                        <p class="istanbul">&#304;stanbul Aquarium</p>
-                    </div>       
-                <a href="#" id="tix-btn">Get Tickets Now!</a>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Light Aquarium</title>
+    <link href="css/style-redo.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="flex align-center bold">
+      <div class="nav__burger"><img src="icons/hamburger.svg" /></div>
+      <div class="nav__left flex align-center">
+        <img src="icons/ticket.svg" /><a href="#">GetTicket<span>.net</span></a>
+      </div>
+      <div class="nav__right flex align-center around caps">
+        <a href="#">Browse Events</a>
+        <a href="#">Organize</a>
+        <a href="#">sign in</a>
+        <a href="#">contact</a>
+        <a href="#" id="create">create event</a>
+      </div>
+    </nav>
+    <section class="flex between hero">
+      <div class="hero__left"><img src="images/fish.png" alt="" /></div>
+      <div class="flex align-center hero__right">
+        <div class="hero__date caps">
+          <p id="day">05</p>
+          <p id="month">nov</p>
         </div>
-        
-        <div class="columns">
-            <div class="col">
-                <div class="big-icons">
-                    <img src="icons/sharkfin.svg">
-                </div>
-                <h3>About Us</h3>
-                <p class="col-text">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox</p>
-            </div>
-            <div class="col">
-                <div class="big-icons">
-                    <img src="icons/calendar.svg">
-                </div>
-                <h3>Date & Time</h3>
-                <p class="col-text">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox</p>
-            </div>
-            <div class="col">
-                <div class="big-icons">
-                    <img src="icons/large-pin.svg">
-                </div>    
-                <h3>Location</h3>
-                <p class="col-text">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox</p>
-            </div>
+        <div class="hero__info flex column">
+          <h2 class="title caps bold">Black Light Aquarium</h2>
+          <p class="description light">There are so many reasons to smile!</p>
+          <p class="location bold flex align-center">
+            <img src="icons/small-point.svg" /> &#304;stanbul Aquarium
+          </p>
+          <div class="buy-btn caps bold">Get Tickets Now!</div>
         </div>
-        <div class="directions">           
-            <div class="map">
-                <div class="pin"><img src="icons/large-pin.svg"></div>
-                <div class="location">
-                    <img src="icons/bubble.svg">
-                    <p>Black Light Aquarium</p>
-                </div>
-            </div>
-        </div>      
-        <footer>
-            <div class="copyright-container">
-                <p class="copyright">&copy; Copyright 2018|</p>
-                <p class="copyright">Designed by <span class="creators"><Farn></Farn>ooshJml</span> for <span class="creators">XDdailychallenge</span></p>
-            </div>
-            <ul class="social">
-                <li class="small-icons">
-                   <a href="https://www.instagram.com"><img src="icons/instagram.svg"></a>
-                </li>
-                <li class="small-icons">
-                    <a href="https://www.twitter.com"><img src="icons/twitter.svg"></a>
-                </li>
-                <li class="small-icons">
-                    <a href="https://www.facebook.com"><img src="icons/facebook.svg"></a>
-                </li>
-            </ul> 
-        </footer> 
-    </div>
-</body>
+      </div>
+    </section>
+    <section class="details flex">
+      <div class="details__block">
+        <img src="icons/sharkfin.svg" class="details__icon" />
+        <h3 class="details__title">About Us</h3>
+        <p class="details__text light">
+          The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax
+          quiz prog. Junk MTV quiz graced by fox
+        </p>
+      </div>
+      <div class="details__block">
+        <img src="icons/calendar.svg" class="details__icon" />
+        <h3 class="details__title">Date & Time</h3>
+        <p class="details__text light">
+          The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax
+          quiz prog. Junk MTV quiz graced by fox
+        </p>
+      </div>
+      <div class="details__block">
+        <img src="icons/large-pin.svg" class="details__icon" />
+        <h3 class="details__title">Location</h3>
+        <p class="details__text light">
+          The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax
+          quiz prog. Junk MTV quiz graced by fox
+        </p>
+      </div>
+    </section>
+    <section class="map flex">
+      <div class="map__location">
+        <img src="icons/large-pin.svg" class="map__point" />
+        <img src="icons/bubble.svg" class="map__bubble" />
+        <p class="map__text caps bold">
+          Black Light <br />
+          Aquarium
+        </p>
+      </div>
+    </section>
+    <footer class="flex align-center">
+      <div class="footer__left flex">
+        <p class="copyright">&copy; Copyright 2018|</p>
+        <p class="copyright">
+          Designed by <span class="creators">FarooshJml</span> for
+          <span class="creators">XDdailychallenge</span>
+        </p>
+      </div>
+      <div class="footer__right flex">
+        <a href="https://www.instagram.com" class="social"
+          ><img src="icons/instagram.svg"
+        /></a>
+        <a href="https://www.twitter.com" class="social"
+          ><img src="icons/twitter.svg"
+        /></a>
+        <a href="https://www.facebook.com" class="social"
+          ><img src="icons/facebook.svg"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
